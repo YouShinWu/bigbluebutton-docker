@@ -222,7 +222,7 @@ services:
       context: mod/webrtc-sfu
       args:
         BBB_BUILD_TAG: {{ .Env.BBB_BUILD_TAG }}
-    image: alangecker/bbb-docker-webrtc-sfu:{{ .Env.TAG_WEBRTC_SFU }}
+    image: m11007322/bbb-docker-webrtc-sfu:{{ .Env.TAG_WEBRTC_SFU }}
     restart: unless-stopped
     depends_on:
       - redis
