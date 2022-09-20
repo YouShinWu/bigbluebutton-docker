@@ -227,5 +227,5 @@ echo "  $ docker-compose up -d"
 
 # change mediasoup version to 3.10.5 & remove package-copy.json
 sed -i '23 c\
-    "mediasoup": "3.10.5",' ../mod/webrtc-sfu/bbb-webrtc-sfu/package.json
-rm ../mod/webrtc-sfu/bbb-webrtc-sfu/package-copy.json
+    "mediasoup": "3.10.5",' ./mod/webrtc-sfu/bbb-webrtc-sfu/package.json
+rm ./mod/webrtc-sfu/bbb-webrtc-sfu/package-lock.json
