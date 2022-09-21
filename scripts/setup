@@ -114,7 +114,7 @@ fi
 
 nat_correct=""
 while [[ ! $nat_correct =~ ^(y|n)$ ]]; do
-    read -p "Is  your server behind a Firewall/NAT? (y/n): " nat_correct
+    read -p "Is your server behind a Firewall/NAT? (y/n): " nat_correct
 done
 
 if [ "$nat_correct" == "y" ]
