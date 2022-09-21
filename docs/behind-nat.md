@@ -6,8 +6,8 @@ Kurento binds somehow always to the external IP instead of the local one or `0.0
 $ ip addr add 144.76.97.34/32 dev ens3
 ```
 
-#### Permanent way
-Additional IP address can be permanently added to your system by editing the file "/etc/netplan/50-cloud-init.yaml"
+#### Permanent way (After building up your BigBlueButton)
+Additional IP address can be permanently added to your system by editing the file `/etc/netplan/50-cloud-init.yaml`
 
 Use the command below
 
@@ -15,7 +15,7 @@ Use the command below
 $ sudo vim /etc/netplan/50-cloud-init.yaml
 ```
 
-Add following code below "set-name: ens4" (ens4 name depends on device). addresses is your external IP
+Add following code below "set-name: ens4" (ens4 name depends on device) and `reboot`. `addresses` is your external IP
 
 ```
 addresses: [35.221.137.107/32]
