@@ -24,8 +24,8 @@ addresses: [35.221.137.107/32]
 Reboot your system and rebuild your bbb-docker, then you can set your external IP permanently
 
 ```
-sudo docker-compose build
-sudo docker-compose up -d
+$ sudo docker-compose build
+$ sudo docker-compose up -d
 ```
 
 
